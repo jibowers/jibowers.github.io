@@ -7,36 +7,25 @@
 These python programs record values in the mandelbrot set, julia set, and some variants (like the manowar and quartic mandelbrot fractals),
 as well as how long "escaped" values took to fall out.
 
-From there, I plotted the points in matlab, with the third variable (how long to escape) indicated by color.
+From there, I plotted the points from the .csv file in Matlab, with the third variable (how long to escape) indicated by color.
 
 </p>
  
-<br>
-Standard mandelbrot (z = z^2 + c, c representing the point):
-<br>
-<img src="classicmandy_2.png" width=400 height=300 alt="Figure 1">
+<br>Standard mandelbrot (z = z^2 + c, c representing the point):
+<br><img src="classicmandy_2.png" width=400 height=300 alt="Figure 1">
 
-<br>
-From this point on, I started not recording points which escaped too quickly(within first or second iteration).
+<br>From this point on, I started not recording points which escaped too quickly(within first or second iteration).
 That's why the matlab figures are rounded.
-<br>
-Quartic mandelbrot (z = z^4 + c, c representing the point):
-<br>
-<img src="quartmandy_1.png" width=400 height=300 alt="Figure 1">
-<br>
-Octic mandelbrot (z = z^8 + c, c representing the point):
-<br>
-<img src="octicmandy_1.png" width=400 height=300 alt="Figure 1">
-<br>
-Manowar (z(sub k+1) = z(sub k)^2 + z(sub k-1) + c):
-<br>
-<img src="mow_1.png" width=400 height=300 alt="Figure 1">
+<br>Quartic mandelbrot (z = z^4 + c, c representing the point):
+<br><img src="quartmandy_1.png" width=400 height=300 alt="Figure 1">
+<br>Octic mandelbrot (z = z^8 + c, c representing the point):
+<br><img src="octicmandy_1.png" width=400 height=300 alt="Figure 1">
+<br>Manowar (z(sub k+1) = z(sub k)^2 + z(sub k-1) + c):
+<br><img src="mow_1.png" width=400 height=300 alt="Figure 1">
 <br><p>
 Now, the Julia set. These are calculated differently, with c constant and the initial z being the point
 </p>
-<br>
-Calculated using c = [0.56667, -0.5] and z = z^2 + c:
-<img src="juliaphoenix_1.png" width=400 height=300 alt="Figure 1">
-
-The Butterfly (not its official name, just what I'm calling it), calculated with z(sub k+1) = z(sub k)^2 + c + P·z(subk-1); c = 0.56667, p = -0.5
-<img src="juliabutterfly_1.png" width=400 height=300 alt="Figure 1">
+<br>Calculated using c = [0.56667, -0.5] and z = z^2 + c:
+<br><img src="juliaphoenix_1.png" width=400 height=300 alt="Figure 1">
+<br>The Butterfly (not its official name, just what I'm calling it), calculated with z(sub k+1) = z(sub k)^2 + c + P·z(subk-1); c = 0.56667, p = -0.5
+<br><img src="juliabutterfly_1.png" width=400 height=300 alt="Figure 1">
